@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- springを利用し、オブジェクトを作る。　springでbeanと呼ばれる
+
+    タイプ　変数　=　new タイプ();
+    Hello hello = new Hello();
+    bean = オブジェクト　new Hello();
+
+    id = 変数名
+    class = new プロジェクト
+    property  オブジェクトのプロパティに値を設定します
+    -->
+    <bean id="Hello" class="com.zhu.pojo.Hello">
+        <property name="str" value="Spring"/>
+    </bean>
+</beans>
