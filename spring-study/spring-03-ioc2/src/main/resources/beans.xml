@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    デフォルトコンストラクタではない場合、インデックスを利用する -->
+<!--    <bean id="user" class="com.zhu.pojo.User">-->
+<!--        <constructor-arg index="0" value="syu"/>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;使えるパターンが限られる&ndash;&gt;-->
+<!--    <bean id="user" class="com.zhu.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="syu ennsei"/>-->
+<!--    </bean>-->
+
+    <!--パラメーター -->
+    <bean id="user" class="com.zhu.pojo.User">
+        <constructor-arg name="name" value="syu e"/>
+    </bean>
+
+    <bean id="userT" class="com.zhu.pojo.UserT">
+
+    </bean>
+</beans>
