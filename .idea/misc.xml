@@ -6,6 +6,11 @@
         <option value="$PROJECT_DIR$/spring-study/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-study/spring-01-ioc1/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectResources">
     <resource url=" http://www.springframework.org/schema/beans/spring-beans.xsd" location="$PROJECT_DIR$" />
