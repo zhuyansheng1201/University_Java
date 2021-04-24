@@ -9,7 +9,7 @@ public class Student {
     private String[] books;
     private List<String> hobbys;
     private Map<String,String> card;
-    private Set<String> game;
+    private Set<String> games;
     private String wife;
     private Properties info;
 
@@ -53,12 +53,12 @@ public class Student {
         this.card = card;
     }
 
-    public Set<String> getGame() {
-        return game;
+    public Set<String> getGames() {
+        return games;
     }
 
-    public void setGame(Set<String> game) {
-        this.game = game;
+    public void setGames(Set<String> games) {
+        this.games = games;
     }
 
     public String getWife() {
@@ -81,11 +81,11 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", address=" + address +
+                ", address=" + address.toString() +
                 ", books=" + Arrays.toString(books) +
                 ", hobbys=" + hobbys +
                 ", card=" + card +
-                ", game=" + game +
+                ", games=" + games +
                 ", wife='" + wife + '\'' +
                 ", info=" + info +
                 '}';
