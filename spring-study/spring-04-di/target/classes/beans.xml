@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.zhu.pojo.Address">
+            <property name="address" value="kanagawa"/>
+    </bean>
+
+    <bean id="student" class="com.zhu.pojo.Student">
+        <!-- value-->
+        <property name="name" value="syu ennsei"/>
+        <!-- bean ref-->
+        <property name="address" ref="address"/>
+        <!-- アレイ ref-->
+        <property name="books">
+            <array>
+                <value>honnda</value>
+                <value>nakayama</value>
+                <value>suzuki</value>
+            </array>
+        </property>
+
+        <!--list-->
+        <property name="hobbys">
+            <list>
+                <value>music</value>
+                <value>cold</value>
+                <value>movie</value>
+            </list>
+        </property>
+
+        <!--Map-->
+        <property name="card">
+            <map>
+                <entry key="id" value="1232222222"/>
+                <entry key="bank card" value="11233554613"/>
+            </map>
+        </property>
+
+        <!--set-->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>Dota</value>
+                <value>COC</value>
+            </set>
+        </property>
+
+        <!--null-->
+        <property name="wife">
+            <null/>
+        </property>
+
+        <!--properties-->
+        <property name="info">
+            <props>
+                <prop key="student id">MH030020</prop>
+                <prop key="gender">man</prop>
+                <prop key="name">syu</prop>
+                <prop key="pass">123456</prop>
+            </props>
+        </property>
+        
+    </bean>
+</beans>
