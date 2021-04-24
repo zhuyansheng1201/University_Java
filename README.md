@@ -38,6 +38,5 @@ Bean scopes
 byType と byName<br>
 @Autowired<br>
 @Qualifier<br>
-@Resource<br>
-の使い方
+@Resource　の使い方
 
