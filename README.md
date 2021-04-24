@@ -33,5 +33,9 @@ setを利用するインジェクト
 4月24日<br>
 Bean scopes
 
+## Spring-05-Autowired
+4月24日<br>
+byType と byNameの使い方
+
 ### ここまでの感想or出来事
 勉強時間の大半はmaven、環境変数とパッケージなどによるerroに費やしてきました。
