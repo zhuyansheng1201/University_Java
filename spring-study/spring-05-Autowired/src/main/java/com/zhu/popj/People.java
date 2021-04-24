@@ -1,32 +1,37 @@
 package com.zhu.popj;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import javax.annotation.Resource;
+
 public class People {
-    public Cat cat;
-    public Dog dog;
+
+//    @Autowired //(required = false or true)
+//    @Qualifier(value = "cat111")
+//    public Cat cat;
+//    @Autowired
+//    @Qualifier(value = "dog222")
+//    public Dog dog;
+
+    @Resource(name = "cat2")
+    private Cat cat;
+
+    @Resource
+    private Dog dog;
+
     private String name;
 
     public Cat getCat() {
         return cat;
     }
 
-    public void setCat(Cat cat) {
-        this.cat = cat;
-    }
-
     public Dog getDog() {
         return dog;
     }
 
-    public void setDog(Dog dog) {
-        this.dog = dog;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     @Override
