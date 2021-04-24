@@ -4,12 +4,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring-study/pom.xml" />
-      </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
+        <option value="$PROJECT_DIR$/spring-05-Autowired/pom.xml" />
         <option value="$PROJECT_DIR$/spring-study/spring-01-ioc1/pom.xml" />
-      </set>
+      </list>
     </option>
   </component>
   <component name="ProjectResources">
